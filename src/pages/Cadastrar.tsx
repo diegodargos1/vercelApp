@@ -1,4 +1,3 @@
-import  { useState } from 'react'
 import '../styles/global.css';
 import '../styles/pages/cadastrar.css';
 import logoImg from '../assets/images/boxicon.png'
