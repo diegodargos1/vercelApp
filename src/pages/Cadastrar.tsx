@@ -1,18 +1,11 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import '../styles/global.css';
 import '../styles/pages/cadastrar.css';
 import logoImg from '../assets/images/boxicon.png'
 import LoginFacebook from '../components/facebook'
-import { Link } from 'react-router-dom'
 
 
 function Cadastrar() {
-    let [ isHidden, setIsHidden ] = useState(false);
-
-    const toggleHidden = () => {
-        setIsHidden(!isHidden);
-    }
-
     return (
         <div id="page-cadastrar">
             <div className="content-wrapper">
