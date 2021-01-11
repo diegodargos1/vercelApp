@@ -89,7 +89,7 @@ class Cadastrar extends React.Component<Props> {
                     emailTxt: "Email invalido.",
                     emailColor: "red"
                 })
-            } else if (this.state.nome == "") {
+            } else if (this.state.nome === "") {
                 this.nomeInput.current?.focus()
                 this.setState({
                     nomeColor: "red"

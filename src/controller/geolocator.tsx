@@ -3,12 +3,6 @@ import React from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import logoImg from '../assets/images/marker.png';
 
-interface Props {
-    latitude: number,
-    longitude: number;
-
-}
-
 function MyComponent(props: { latitude: number; longitude: number; }) {
     const map = useMap();
     //map.setCenter([props.latitude, props.longitude])
