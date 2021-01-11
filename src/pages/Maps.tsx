@@ -53,8 +53,8 @@ function Maps() {
             setLatitude(crd.latitude);
             setLongitude(crd.longitude)
         }
-
-        if (browser.name === 'safari') {
+        // alert(browser.name)
+        if (browser.name === 'ios') {
             checkLocationSafari()
         } else {
             checkLocationChrome()

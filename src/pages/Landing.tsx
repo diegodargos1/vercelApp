@@ -65,7 +65,7 @@ class Landing extends Component<Props> {
                         </Link> */}
                             <ul>
                                 <li>
-                                    <div className="loginLink" onClick={handleCadastrar} >
+                                    <div className="loginLink"  >
                                         Entrar
                                     </div>
                                 </li>
