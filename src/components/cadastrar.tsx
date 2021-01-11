@@ -56,15 +56,15 @@ class Cadastrar extends React.Component<Props> {
 
     render() {
         const handleInput = (id: React.FormEvent<HTMLInputElement>) => {
-            if (id.currentTarget.id == "email") {
-                const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (id.currentTarget.id === "email") {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
                 const email = re.test(id.currentTarget.value);
                 this.setState({
                     emailCheck: email
                 })
             }
 
-            if (id.currentTarget.id == "password") {
+            if (id.currentTarget.id === "password") {
                 const re = /^(?=.*\d+)(?=.*[a-zA-Z])[0-9a-zA-Z!@#$%]{6,10}$/
                 const pw = re.test(id.currentTarget.value);
                 this.setState({

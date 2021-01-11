@@ -32,7 +32,7 @@ class Landing extends Component<Props> {
     render() {
         const { users } = this.props
 
-        const cadastro = (users.email == "") ? `` : '';
+        //const cadastro = (users.email == "") ? `` : '';
         const handleCadastrar = () => {
             this.setState({
                 cadastrar: !this.state.cadastrar
@@ -65,12 +65,12 @@ class Landing extends Component<Props> {
                         </Link> */}
                             <ul>
                                 <li>
-                                    <a className="loginLink" onClick={handleCadastrar}>
+                                    <a className="loginLink" onClick={handleCadastrar} href='#'>
                                         Entrar
                         </a>
                                 </li>
                                 <li>
-                                    <a className="loginLink" onClick={handleCadastrar}>
+                                    <a className="loginLink" onClick={handleCadastrar} href='#'>
                                         Cadastrar
                         </a>
                                 </li>

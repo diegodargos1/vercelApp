@@ -84,7 +84,7 @@ function Maps() {
             <GeoLocation latitude={latitude} longitude={longitude} />
 
 
-            <a className="create-store" onClick={handleMenu}>
+            <a className="create-store" onClick={handleMenu} href='#'>
                 <FiMenu size={32} color="#FFF" />
             </a>
         </div>
