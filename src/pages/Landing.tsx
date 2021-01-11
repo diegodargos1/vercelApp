@@ -58,21 +58,21 @@ class Landing extends Component<Props> {
                         </p>
                     </main>
 
-                    {(users.email != "") ?
+                    {(users.email !== "") ?
                         <div className="location">
                             {/* <Link to="/map" className="loginLink">
                                 Entrar
                         </Link> */}
                             <ul>
                                 <li>
-                                    <a className="loginLink" onClick={handleCadastrar} href='#'>
+                                    <div className="loginLink" onClick={handleCadastrar} >
                                         Entrar
-                        </a>
+                                    </div>
                                 </li>
                                 <li>
-                                    <a className="loginLink" onClick={handleCadastrar} href='#'>
+                                    <div className="loginLink" onClick={handleCadastrar}>
                                         Cadastrar
-                        </a>
+                                    </div>
                                 </li>
                             </ul>
 
