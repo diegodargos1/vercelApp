@@ -55,8 +55,6 @@ class Cadastrar extends React.Component<Props> {
 
 
     render() {
-        const { users } = this.props;
-
         const handleInput = (id: React.FormEvent<HTMLInputElement>) => {
             if (id.currentTarget.id == "email") {
                 const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
